@@ -1,0 +1,111 @@
+@font-face {
+  font-family: GillSans;
+  src: url("../css/fonts/GillSans.ttc");
+}
+@font-face {
+  font-family: GillSansBold;
+  src: url("../css/fonts/Gill Sans Bold.otf");
+}
+@font-face {
+  font-family: PTSerif;
+  src: url("../css/fonts/PTSerif-Regular.ttf");
+}
+@font-face {
+  font-family: GillSansItalic;
+  src: url("../css/fonts/Gill Sans Italic.otf");
+}
+nav {
+  width: 980px;
+  height: 92.5px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-bottom: solid 2px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #ffffff;
+  font-family: GillSans;
+}
+nav .logo span {
+  position: absolute;
+  bottom: -5px;
+  color: #ffffff;
+}
+
+.links {
+  width: 319px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: GillSans;
+}
+
+span {
+  color: #EE4367;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.5)), to(rgba(255, 209, 64, 0.5))), url(../images/hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.5), rgba(255, 209, 64, 0.5)), url(../images/hero.jpg);
+  background-size: 120% 100%;
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .centered {
+  height: 32%;
+  width: 400px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: PTSerif;
+}
+.hero .headerTxt {
+  height: 73px;
+  font-size: 20px;
+  font-family: GillSansItalic;
+  color: #EE4367;
+}
+.hero .lorem {
+  font-size: 20px;
+  font-family: GillSansItalic;
+}
+.hero button {
+  height: 40.04px;
+  width: 121.62px;
+  border: none;
+  background-color: #EE4367;
+  color: #ffffff;
+  font-family: GillSans;
+  font-size: 15px;
+}

@@ -1,0 +1,39 @@
+.about {
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .lorem {
+  font-family: GillSans;
+  color: #FFD140;
+  height: 90px;
+  width: 789px;
+}
+.about .john {
+  font-family: PTSerif;
+  font-size: 15px;
+  color: #EE4367;
+}
+.about .ceo {
+  font-family: PTSerif;
+  font-size: 10px;
+  color: #A8A8A8;
+}
+
+.events {
+  background-color: #540D6E;
+  height: 320px;
+}
+
+.footer {
+  background-color: #EE4367;
+  height: 455px;
+}

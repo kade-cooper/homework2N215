@@ -1,0 +1,110 @@
+@font-face{
+    font-family: GillSans;
+    src: url('../css/fonts/GillSans.ttc')
+}
+
+
+@font-face{
+    font-family: PTSerif;
+    src: url('../css/fonts/PTSerif-Regular.ttf')
+}
+
+@font-face {
+    font-family: GillSansItalic;
+    src: url('../css/fonts/Gill\ Sans\ Italic.otf');
+}
+
+@font-face {
+    font-family: GillSansLight;
+    src: url('../css/fonts/Gill\ Sans\ Light\ Italic.otf');
+}
+
+@font-face {
+    font-family: GillSansBold;
+    src: url('../css/fonts/Gill\ Sans\ Bold.otf');
+}
+
+
+nav{
+    width: 980px;
+    height: 92.5px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-bottom: solid 2px #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        position:relative;
+        width: 92px;
+        height: 42px;
+        border: solid 2px #ffffff;
+        font-family: GillSans;
+
+        span {
+            position: absolute;
+            bottom: -5px;
+            color: #ffffff;
+        }
+    }
+
+}
+
+.links{
+    width:319px;
+    display: flex;
+    justify-content: space-around;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: GillSans;
+    }
+}
+
+span{
+    color: #EE4367;
+}
+
+.hero{
+    background-image: linear-gradient(to bottom, 
+    rgba(255,209,64,.5), rgba(255,209,64,.5)),
+    url(../images/hero.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 170%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .centered{
+        height: 32%;
+        width:400px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 40px;
+        font-family: PTSerif;
+    }
+    .headerTxt{
+        height: 73px;
+        font-size: 20px;
+        font-family: GillSansItalic;
+        color: #EE4367;
+    }
+    .lorem{
+        font-size: 20px;
+        font-family: GillSansItalic;
+    }
+    button{
+        height: 40.04px;
+        width: 121.62px;
+        border: none;
+        background-color: #EE4367;
+        color: #ffffff;
+        font-family: GillSans;
+        font-size: 15px;
+    }
+}

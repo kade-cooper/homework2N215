@@ -1,0 +1,170 @@
+.about{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .lorem{
+        font-family: GillSans;
+        color: #FFD140;
+        height: 90px;
+        width: 789px;
+    }
+
+    .john{
+        font-family: PTSerif;
+        font-size: 15px;
+        color: #EE4367;
+    }
+    .ceo{
+        font-family: PTSerif;
+        font-size: 10px;
+        color: #A8A8A8;
+    }
+}
+
+.events{
+    background-color: #540D6E;
+    height: 320px;
+    align-items: center;
+    padding-left: 40px;
+
+    .header{
+        padding-top: 50px;
+        height: 90px;
+        width: 392px;
+        font-family: GillSans;
+        font-size: 25px;
+        color: #ffffff;
+        border-bottom: solid 2px #ffffff;
+    }
+
+    .events{
+        height: 124px;
+        margin-top: 34.5px;
+        display: flex;
+
+        .event{
+            width: 220px;
+            height: 100%;
+            display: flex;
+            margin-right: 20px;
+            
+
+            .date{
+                width: 60px;
+                height: 60px;
+                background-color: #EE4367;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .dateNum{
+                    font-family: GillSansBold;
+                    font-size: 20px;
+                    color: #ffffff;
+                }
+
+
+                .dateMonth{
+                    font-family: GillSansLight;
+                    font-size: 12px;
+                    color: #ffffff;
+                }
+            }
+
+            .event-detail{
+                width: 140px;
+                margin-left: 20px;
+                font-family: GillSans;
+                font-size: 15px;
+                color: #ffffff;
+
+                .event-detail2{
+                    margin-top: 5px;
+                    font-family: GillSans;
+                    font-size: 13px;
+                    color: #EE4367;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #EE4367; 
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo{
+        position:relative;
+        width: 92px;
+        height: 42px;
+        border: solid 2px #ffffff;
+        font-family: GillSans;
+
+        span {
+            position: absolute;
+            bottom: -5px;
+            color: #ffffff;
+        }
+    }
+    .infoHolder{
+        margin-top: 48px;
+        margin-bottom: 46px;
+            .info{
+                font-family: GillSans;
+                font-size: 15px;
+                color: #ffffff;
+            }
+    }
+
+    .emailBar{
+        display: flex;
+
+        input{
+            height: 60px;
+            width: 529px;
+            background-color: #F56B88;
+            color: #ffffff;
+            border: none;
+            font-family: GillSans;
+            font-size: 16px;
+            padding-left: 23px;
+        }
+
+        ::placeholder{
+            color: #ffffff;
+            opacity: 50%;
+        }
+        button{
+            height: 60px;
+            width: 167px;
+            border: none;
+            color: #EE4367;
+            font-family: GillSans;
+            font-size: 16px;
+        }
+    }
+
+    .logos{
+        padding-top: 30px;
+        img{
+            height:31.22px;
+        }
+    }
+
+    .end{
+        color: #ffffff;
+        font-family: GillSans;
+        font-size: 12px;
+        padding-top: 46.7px;
+    }
+
+}

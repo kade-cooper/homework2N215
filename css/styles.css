@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url("../css/fonts/GillSans.ttc");
+}
+@font-face {
+  font-family: PTSerif;
+  src: url("../css/fonts/PTSerif-Regular.ttf");
+}
+@font-face {
+  font-family: GillSansItalic;
+  src: url("../css/fonts/Gill Sans Italic.otf");
+}
+@font-face {
+  font-family: GillSansLight;
+  src: url("../css/fonts/Gill Sans Light Italic.otf");
+}
+@font-face {
+  font-family: GillSansBold;
+  src: url("../css/fonts/Gill Sans Bold.otf");
+}
+nav {
+  width: 980px;
+  height: 92.5px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-bottom: solid 2px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #ffffff;
+  font-family: GillSans;
+}
+nav .logo span {
+  position: absolute;
+  bottom: -5px;
+  color: #ffffff;
+}
+
+.links {
+  width: 319px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: GillSans;
+}
+
+span {
+  color: #EE4367;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.5)), to(rgba(255, 209, 64, 0.5))), url(../images/hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.5), rgba(255, 209, 64, 0.5)), url(../images/hero.jpg);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 170%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .centered {
+  height: 32%;
+  width: 400px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: PTSerif;
+}
+.hero .headerTxt {
+  height: 73px;
+  font-size: 20px;
+  font-family: GillSansItalic;
+  color: #EE4367;
+}
+.hero .lorem {
+  font-size: 20px;
+  font-family: GillSansItalic;
+}
+.hero button {
+  height: 40.04px;
+  width: 121.62px;
+  border: none;
+  background-color: #EE4367;
+  color: #ffffff;
+  font-family: GillSans;
+  font-size: 15px;
+}
+
+.about {
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .lorem {
+  font-family: GillSans;
+  color: #FFD140;
+  height: 90px;
+  width: 789px;
+}
+.about .john {
+  font-family: PTSerif;
+  font-size: 15px;
+  color: #EE4367;
+}
+.about .ceo {
+  font-family: PTSerif;
+  font-size: 10px;
+  color: #A8A8A8;
+}
+
+.events {
+  background-color: #540D6E;
+  height: 320px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+.events .header {
+  padding-top: 50px;
+  height: 90px;
+  width: 392px;
+  font-family: GillSans;
+  font-size: 25px;
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
+}
+.events .events {
+  height: 124px;
+  margin-top: 34.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.events .events .event {
+  width: 220px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+.events .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #EE4367;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.events .events .event .date .dateNum {
+  font-family: GillSansBold;
+  font-size: 20px;
+  color: #ffffff;
+}
+.events .events .event .date .dateMonth {
+  font-family: GillSansLight;
+  font-size: 12px;
+  color: #ffffff;
+}
+.events .events .event .event-detail {
+  width: 140px;
+  margin-left: 20px;
+  font-family: GillSans;
+  font-size: 15px;
+  color: #ffffff;
+}
+.events .events .event .event-detail .event-detail2 {
+  margin-top: 5px;
+  font-family: GillSans;
+  font-size: 13px;
+  color: #EE4367;
+}
+
+.footer {
+  background-color: #EE4367;
+  height: 455px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #ffffff;
+  font-family: GillSans;
+}
+.footer .logo span {
+  position: absolute;
+  bottom: -5px;
+  color: #ffffff;
+}
+.footer .infoHolder {
+  margin-top: 48px;
+  margin-bottom: 46px;
+}
+.footer .infoHolder .info {
+  font-family: GillSans;
+  font-size: 15px;
+  color: #ffffff;
+}
+.footer .emailBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .emailBar input {
+  height: 60px;
+  width: 529px;
+  background-color: #F56B88;
+  color: #ffffff;
+  border: none;
+  font-family: GillSans;
+  font-size: 16px;
+  padding-left: 23px;
+}
+.footer .emailBar ::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar ::-moz-placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar :-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar ::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar ::placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar button {
+  height: 60px;
+  width: 167px;
+  border: none;
+  color: #EE4367;
+  font-family: GillSans;
+  font-size: 16px;
+}
+.footer .logos {
+  padding-top: 30px;
+}
+.footer .logos img {
+  height: 31.22px;
+}
+.footer .end {
+  color: #ffffff;
+  font-family: GillSans;
+  font-size: 12px;
+  padding-top: 46.7px;
+}
