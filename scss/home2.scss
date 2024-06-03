@@ -24,7 +24,7 @@
     }
 }
 
-.events{
+.events1{
     background-color: #540D6E;
     height: 320px;
     align-items: center;
@@ -44,11 +44,13 @@
         height: 124px;
         margin-top: 34.5px;
         display: flex;
+        justify-content: space-between;
 
         .event{
             width: 220px;
             height: 100%;
             display: flex;
+            justify-content: space-between;
             margin-right: 20px;
             
 
@@ -167,4 +169,24 @@
         padding-top: 46.7px;
     }
 
+}
+
+@media only all and (max-width: 1300px) {
+    .events1{
+        height:500px;
+        .events{
+        flex-wrap: wrap;
+    }
+    }
+    
+}
+
+@media only all and (max-width: 534px) {
+    .events1{
+        height:760px;
+        .events{
+        flex-wrap: wrap;
+    }
+    }
+    
 }

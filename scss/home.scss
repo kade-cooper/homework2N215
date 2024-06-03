@@ -24,34 +24,35 @@
     src: url('../css/fonts/Gill\ Sans\ Bold.otf');
 }
 
-
-nav{
-    width: 980px;
-    height: 92.5px;
+.wrapper{
+    height:90.5px;
+    width: 100%;
     position: fixed;
-    left: 50%;
-    transform: translate(-50%,0);
-    border-bottom: solid 2px #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    nav{
+        max-width: 980px;
+        height: 92.5px;
+        margin: 0 auto;
+        border-bottom: solid 2px #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    .logo{
-        position:relative;
-        width: 92px;
-        height: 42px;
-        border: solid 2px #ffffff;
-        font-family: GillSans;
+        .logo{
+            position:relative;
+            width: 92px;
+            height: 42px;
+            border: solid 2px #ffffff;
+            font-family: GillSans;
 
-        span {
-            position: absolute;
-            bottom: -5px;
-            color: #ffffff;
+            span {
+                position: absolute;
+                bottom: -5px;
+                color: #ffffff;
+            }
         }
+
     }
-
 }
-
 .links{
     width:319px;
     display: flex;
@@ -106,5 +107,13 @@ span{
         color: #ffffff;
         font-family: GillSans;
         font-size: 15px;
+    }
+}
+
+@media only all and (max-width: 980px){
+    .wrapper{
+        nav{
+            padding: 0 30px;
+        }
     }
 }

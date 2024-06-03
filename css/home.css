@@ -3,10 +3,6 @@
   src: url("../css/fonts/GillSans.ttc");
 }
 @font-face {
-  font-family: GillSansBold;
-  src: url("../css/fonts/Gill Sans Bold.otf");
-}
-@font-face {
   font-family: PTSerif;
   src: url("../css/fonts/PTSerif-Regular.ttf");
 }
@@ -14,13 +10,24 @@
   font-family: GillSansItalic;
   src: url("../css/fonts/Gill Sans Italic.otf");
 }
-nav {
-  width: 980px;
-  height: 92.5px;
+@font-face {
+  font-family: GillSansLight;
+  src: url("../css/fonts/Gill Sans Light Italic.otf");
+}
+@font-face {
+  font-family: GillSansBold;
+  src: url("../css/fonts/Gill Sans Bold.otf");
+}
+.wrapper {
+  background-color: red;
+  height: 90px;
+  width: 100%;
   position: fixed;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+}
+.wrapper nav {
+  max-width: 980px;
+  height: 92.5px;
+  margin-right: 0 auto;
   border-bottom: solid 2px #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,14 +39,14 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
-nav .logo {
+.wrapper nav .logo {
   position: relative;
   width: 92px;
   height: 42px;
   border: solid 2px #ffffff;
   font-family: GillSans;
 }
-nav .logo span {
+.wrapper nav .logo span {
   position: absolute;
   bottom: -5px;
   color: #ffffff;
@@ -66,12 +73,11 @@ span {
 .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.5)), to(rgba(255, 209, 64, 0.5))), url(../images/hero.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.5), rgba(255, 209, 64, 0.5)), url(../images/hero.jpg);
-  background-size: 120% 100%;
   height: 500px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 170%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

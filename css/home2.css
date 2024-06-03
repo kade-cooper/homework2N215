@@ -31,9 +31,171 @@
 .events {
   background-color: #540D6E;
   height: 320px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+.events .header {
+  padding-top: 50px;
+  height: 90px;
+  width: 392px;
+  font-family: GillSans;
+  font-size: 25px;
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
+}
+.events .events {
+  height: 124px;
+  margin-top: 34.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.events .events .event {
+  width: 220px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 20px;
+}
+.events .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #EE4367;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.events .events .event .date .dateNum {
+  font-family: GillSansBold;
+  font-size: 20px;
+  color: #ffffff;
+}
+.events .events .event .date .dateMonth {
+  font-family: GillSansLight;
+  font-size: 12px;
+  color: #ffffff;
+}
+.events .events .event .event-detail {
+  width: 140px;
+  margin-left: 20px;
+  font-family: GillSans;
+  font-size: 15px;
+  color: #ffffff;
+}
+.events .events .event .event-detail .event-detail2 {
+  margin-top: 5px;
+  font-family: GillSans;
+  font-size: 13px;
+  color: #EE4367;
 }
 
 .footer {
   background-color: #EE4367;
   height: 455px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #ffffff;
+  font-family: GillSans;
+}
+.footer .logo span {
+  position: absolute;
+  bottom: -5px;
+  color: #ffffff;
+}
+.footer .infoHolder {
+  margin-top: 48px;
+  margin-bottom: 46px;
+}
+.footer .infoHolder .info {
+  font-family: GillSans;
+  font-size: 15px;
+  color: #ffffff;
+}
+.footer .emailBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .emailBar input {
+  height: 60px;
+  width: 529px;
+  background-color: #F56B88;
+  color: #ffffff;
+  border: none;
+  font-family: GillSans;
+  font-size: 16px;
+  padding-left: 23px;
+}
+.footer .emailBar ::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar ::-moz-placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar :-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar ::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar ::placeholder {
+  color: #ffffff;
+  opacity: 50%;
+}
+.footer .emailBar button {
+  height: 60px;
+  width: 167px;
+  border: none;
+  color: #EE4367;
+  font-family: GillSans;
+  font-size: 16px;
+}
+.footer .logos {
+  padding-top: 30px;
+}
+.footer .logos img {
+  height: 31.22px;
+}
+.footer .end {
+  color: #ffffff;
+  font-family: GillSans;
+  font-size: 12px;
+  padding-top: 46.7px;
 }
